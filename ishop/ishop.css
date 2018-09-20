@@ -1,0 +1,34 @@
+.goods__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.goods__block {
+    width: 160px;
+    margin: 5px;
+    padding: 5px;
+    background: #AAA;
+}
+.goods__block:hover {
+    background: #EEEEEE;
+    outline: 1px solid black;
+}
+.goods__img {
+    width: 100%;
+}
+.goods__name,
+.goods__quantity,
+.goods__price {
+    display: block;
+    width: 100%;
+}
+.goods__name {
+    font-size: 20px;
+    font-weight: bold;
+    color: darkblue;
+}
+.goods__price {
+    font-size: 26px;
+    text-align: right;
+    color: darkolivegreen;
+}
