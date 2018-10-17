@@ -1,0 +1,25 @@
+.product__wrapper {
+    display: inline-block;
+    background: #ddd;
+    margin: 5px;
+}
+.product__block {
+    display: flex;
+    justify-content: flex-start;
+}
+.product__img {
+    height: 60px;
+    margin: 5px;
+}
+.product__info {
+    width: 200px;
+    align-self: center;
+}
+.selected {
+    background: darkslategrey;
+    color: white;
+}
+.product__delete-button {
+    margin: 10px;
+    align-self: center;
+}
