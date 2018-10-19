@@ -1,11 +1,8 @@
 .product__wrapper {
-    display: inline-block;
-    background: #ddd;
-    margin: 5px;
-}
-.product__block {
     display: flex;
     justify-content: flex-start;
+    background: #ddd;
+    margin: 5px;
 }
 .product__img {
     height: 60px;
@@ -16,13 +13,10 @@
     align-self: center;
 }
 .selected {
-    background: yellowgreen;
+    background: darkslategrey;
     color: white;
 }
 .product__delete-button {
     margin: 10px;
     align-self: center;
-}
-.shop__wrapper {
-    width: 400px;
 }
