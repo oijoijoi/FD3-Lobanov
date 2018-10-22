@@ -1,0 +1,24 @@
+.edit-card__wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    background: yellowgreen;
+    height: 500px;
+    padding: 10px;
+}
+.edit-card__wrapper label {
+    display: inline-block;
+    width: 85px;
+    text-align: right;
+}
+.edit-card__wrapper input {
+    line-height: 20px;
+    margin: 2px;
+}
+.edit-card__wrapper textarea {
+    box-sizing: border-box;
+    margin: 2px;
+    width: 100%;
+    min-height: 55px;
+    max-height: 150px;
+    resize: vertical;
+}

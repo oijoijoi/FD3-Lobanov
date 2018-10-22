@@ -1,22 +1,31 @@
 .product__wrapper {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     background: #ddd;
-    margin: 5px;
+    margin-bottom: 5px;
 }
 .product__img {
     height: 60px;
     margin: 5px;
 }
 .product__info {
-    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+}
+.product__text {
     align-self: center;
 }
 .selected {
-    background: darkslategrey;
+    background: yellowgreen;
     color: white;
 }
+.product__buttons-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+}
 .product__delete-button {
-    margin: 10px;
+    width: 100%;
     align-self: center;
 }
