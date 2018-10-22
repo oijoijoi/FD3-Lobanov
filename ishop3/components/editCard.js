@@ -16,8 +16,11 @@ class EditCard extends React.Component {
     };
 
     state = {
+        name: this.props.name,
+        price: this.props.price,
         img: this.props.img,
-        nameErrorMsg: '',
+        quantity: this.props.quantity,
+        description: this.props.description,
     };
 
     previewImg = (e) => {
@@ -28,18 +31,21 @@ class EditCard extends React.Component {
         this.props.exitEditMode();
     };
 
+    valueToState = (e) => {
+        let stateName = e.target.id;
+        switch (stateName) {
+            case 'name':
+        }
+    };
+
     validateChanges = () => {
-        let el = document.getElementById('name').value;
-        if (el === '') {this.state.nameErrorMsg = 'Поле не может быть пустым'}
-        if (el.length > 30) {this.state.nameErrorMsg = 'Не более 30 символов'}
-        this.setState({nameErrorMsg:this.state.nameErrorMgs});
     };
 
     render() {
         return (
             <form className="edit-card__wrapper">
                 <label htmlFor="name">Название </label>
-                <input id="name" type="text" defaultValue={this.props.name}/>
+                <input id="name" type="text" defaultValue={this.props.name} onChange={this.valueToState} />
                 <span className="edit-card__error-text">{this.state.nameErrorMsg}</span>
                 <br />
                 <img className='info-card__img' src={this.state.img} />
