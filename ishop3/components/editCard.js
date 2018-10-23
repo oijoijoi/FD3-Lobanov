@@ -106,7 +106,7 @@ class EditCard extends React.Component {
                     <textarea id="desc" type="text" defaultValue={this.props.description}>
                     </textarea>
                 </div>
-                <input type="button" value="Save" onClick={this.validForm} />
+                <input type="button" value={this.props.name?'Save':'Add'} onClick={this.validForm} />
                 <input type="button" value="Exit" onClick={this.exitEditMode} />
             </form>
         )
