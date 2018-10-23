@@ -23,7 +23,7 @@ class InfoCard extends React.Component {
                 <h1 className='info-card__name'>{this.props.name}</h1>
                 <img className='info-card__img' src={this.props.img} />
                 <div className='info-card__text'>
-                    <div className="info-crd__description">{'Описание: ' + this.props.description}</div>
+                    {(this.props.description)?<div className="info-crd__description">{'Описание: ' + this.props.description}</div>:null}
                     <div className='info-card__price'>{'Цена: ' + this.props.price}</div>
                     <div className='info-card__quantity'>{'Количество: ' + this.props.quantity}</div>
                 </div>

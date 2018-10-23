@@ -52,11 +52,38 @@ class IShop3 extends React.Component {
         this.setState({workMode:'show'});
     };
 
+    saveChangesFunction = (id, name, url, quant, price, desc) => {
+        let product = {
+            id: id,
+            name: name,
+            price: price,
+            img: url,
+            quantity: quant,
+            description: desc,
+        };
+        if (!this.state.selected) {
+            this.state.goods.push(product);
+        }
+        else {
+            this.state.goods.forEach((item, i) => {
+                if (item.id === this.state.selected) {
+                    this.state.goods.splice(i, 1, product);
+                }
+            })
+        }
+        this.setState({goods:this.state.goods,selected:id});
+        this.exitEditModeFunction();
+    };
+
     deletingFunction = (code) => {
         if (confirm('Удалить?')) {
             this.state.goods.splice(code, 1);
         }
         this.setState({goods:this.state.goods});
+    };
+
+    addNewElement = () => {
+        this.setState({selected:null, workMode:'edit'})
     };
 
     render() {
@@ -77,6 +104,10 @@ class IShop3 extends React.Component {
         );
         let selectedHash = this.state.goods.find(el => el.id === this.state.selected);
         let mainBlock;
+        let IDArr = [];
+        this.state.goods.forEach(item => {
+            IDArr.push(item.id);
+        });
         if (this.state.selected && selectedHash !== undefined) {
             if (this.state.workMode === 'show') {
                 mainBlock =
@@ -100,20 +131,33 @@ class IShop3 extends React.Component {
                         quantity={selectedHash.quantity}
                         img={selectedHash.img}
                         id={selectedHash.id}
+                        idArray={IDArr}
                         description={selectedHash.description}
                         exitEditMode={this.exitEditModeFunction}
-                        selectFunc={this.selectFunction}
+                        saveChanges={this.saveChangesFunction}
                     />
             }
+        }
+        if (!this.state.selected && this.state.workMode === 'edit') {
+            mainBlock =
+                <EditCard
+                    idArray={IDArr}
+                    exitEditMode={this.exitEditModeFunction}
+                    saveChanges={this.saveChangesFunction}
+                />
         }
 
         return (
             <div className="shop__wrapper">
                 <div className="shop__header">
                     Магазин оружия CS:GO
+
                 </div>
-                <div className="shop__prod-list">
-                    {prodList}
+                <div className="shop__sidebar">
+                    <div className="shop__prod-list">
+                        {prodList}
+                    </div>
+                    <input className="shop__sidebar-button" type="button" value="Add new" onClick={this.addNewElement} />
                 </div>
                 <div className="shop__info-card">
                     {mainBlock}

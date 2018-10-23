@@ -1,7 +1,7 @@
 .info-card__wrapper {
     box-sizing: border-box;
     width: 100%;
-    background: yellowgreen;
+    background: lightgrey;
     height: 500px;
     padding: 10px;
 }

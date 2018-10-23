@@ -1,7 +1,7 @@
 .edit-card__wrapper {
     box-sizing: border-box;
     width: 100%;
-    background: yellowgreen;
+    background: lightgrey;
     height: 500px;
     padding: 10px;
 }
@@ -19,6 +19,9 @@
     margin: 2px;
     width: 100%;
     min-height: 55px;
-    max-height: 150px;
+    max-height: 130px;
     resize: vertical;
+}
+.edit-card__error-text {
+    color: red;
 }
