@@ -151,7 +151,6 @@ class IShop3 extends React.Component {
             <div className="shop__wrapper">
                 <div className="shop__header">
                     Магазин оружия CS:GO
-
                 </div>
                 <div className="shop__sidebar">
                     <div className="shop__prod-list">

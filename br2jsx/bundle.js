@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -258,21 +258,6 @@ process.umask = function() { return 0; };
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(8);
-} else {
-  module.exports = __webpack_require__(9);
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
 /*
 object-assign
 (c) Sindre Sorhus
@@ -366,42 +351,22 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 3 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
 
-if (process.env.NODE_ENV !== 'production') {
-  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&
-    Symbol.for &&
-    Symbol.for('react.element')) ||
-    0xeac7;
-
-  var isValidElement = function(object) {
-    return typeof object === 'object' &&
-      object !== null &&
-      object.$$typeof === REACT_ELEMENT_TYPE;
-  };
-
-  // By explicitly using `prop-types` you are opting into new development behavior.
-  // http://fb.me/prop-types-in-prod
-  var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(19)(isValidElement, throwOnDirectAccess);
+if (process.env.NODE_ENV === 'production') {
+  module.exports = __webpack_require__(7);
 } else {
-  // By explicitly using `prop-types` you are opting into new production behavior.
-  // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(20)();
+  module.exports = __webpack_require__(8);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -417,7 +382,7 @@ if (process.env.NODE_ENV !== 'production') {
 var printWarning = function() {};
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactPropTypesSecret = __webpack_require__(5);
+  var ReactPropTypesSecret = __webpack_require__(4);
   var loggedTypeFailures = {};
 
   printWarning = function(text) {
@@ -500,7 +465,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -519,47 +484,47 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(12);
+  module.exports = __webpack_require__(11);
 } else {
-  module.exports = __webpack_require__(13);
+  module.exports = __webpack_require__(12);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(10);
+var _reactDom = __webpack_require__(9);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _ishop = __webpack_require__(18);
+var _brtojsx = __webpack_require__(17);
 
-var _ishop2 = _interopRequireDefault(_ishop);
+var _brtojsx2 = _interopRequireDefault(_brtojsx);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var goods = __webpack_require__(28);
+var string = 'Строка';
 
-_reactDom2.default.render(_react2.default.createElement(_ishop2.default, { goods: goods }), document.getElementById('container'));
+_reactDom2.default.render(_react2.default.createElement(_brtojsx2.default, { str: string }), document.getElementById('container'));
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -572,7 +537,7 @@ _reactDom2.default.render(_react2.default.createElement(_ishop2.default, { goods
  * LICENSE file in the root directory of this source tree.
  */
 
-var m=__webpack_require__(2),n="function"===typeof Symbol&&Symbol.for,p=n?Symbol.for("react.element"):60103,q=n?Symbol.for("react.portal"):60106,r=n?Symbol.for("react.fragment"):60107,t=n?Symbol.for("react.strict_mode"):60108,u=n?Symbol.for("react.profiler"):60114,v=n?Symbol.for("react.provider"):60109,w=n?Symbol.for("react.context"):60110,x=n?Symbol.for("react.async_mode"):60111,y=n?Symbol.for("react.forward_ref"):60112;n&&Symbol.for("react.placeholder");
+var m=__webpack_require__(1),n="function"===typeof Symbol&&Symbol.for,p=n?Symbol.for("react.element"):60103,q=n?Symbol.for("react.portal"):60106,r=n?Symbol.for("react.fragment"):60107,t=n?Symbol.for("react.strict_mode"):60108,u=n?Symbol.for("react.profiler"):60114,v=n?Symbol.for("react.provider"):60109,w=n?Symbol.for("react.context"):60110,x=n?Symbol.for("react.async_mode"):60111,y=n?Symbol.for("react.forward_ref"):60112;n&&Symbol.for("react.placeholder");
 var z="function"===typeof Symbol&&Symbol.iterator;function A(a,b,d,c,e,g,h,f){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var k=[d,c,e,g,h,f],l=0;a=Error(b.replace(/%s/g,function(){return k[l++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
 function B(a){for(var b=arguments.length-1,d="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=0;c<b;c++)d+="&args[]="+encodeURIComponent(arguments[c+1]);A(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",d)}var C={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}},D={};
 function E(a,b,d){this.props=a;this.context=b;this.refs=D;this.updater=d||C}E.prototype.isReactComponent={};E.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?B("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};E.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};function F(){}F.prototype=E.prototype;function G(a,b,d){this.props=a;this.context=b;this.refs=D;this.updater=d||C}var H=G.prototype=new F;
@@ -590,7 +555,7 @@ assign:m}},Y={default:X},Z=Y&&X||Y;module.exports=Z.default||Z;
 
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -611,8 +576,8 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var _assign = __webpack_require__(2);
-var checkPropTypes = __webpack_require__(4);
+var _assign = __webpack_require__(1);
+var checkPropTypes = __webpack_require__(3);
 
 // TODO: this is special because it gets imported during build.
 
@@ -2324,7 +2289,7 @@ module.exports = react;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2362,15 +2327,15 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(11);
+  module.exports = __webpack_require__(10);
 } else {
-  module.exports = __webpack_require__(14);
+  module.exports = __webpack_require__(13);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2386,7 +2351,7 @@ if (process.env.NODE_ENV === 'production') {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(1),n=__webpack_require__(2),ba=__webpack_require__(6);function ca(a,b,c,d,e,f,g,h){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var k=[c,d,e,f,g,h],l=0;a=Error(b.replace(/%s/g,function(){return k[l++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
+var aa=__webpack_require__(2),n=__webpack_require__(1),ba=__webpack_require__(5);function ca(a,b,c,d,e,f,g,h){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var k=[c,d,e,f,g,h],l=0;a=Error(b.replace(/%s/g,function(){return k[l++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
 function t(a){for(var b=arguments.length-1,c="https://reactjs.org/docs/error-decoder.html?invariant="+a,d=0;d<b;d++)c+="&args[]="+encodeURIComponent(arguments[d+1]);ca(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",c)}aa?void 0:t("227");function da(a,b,c,d,e,f,g,h,k){var l=Array.prototype.slice.call(arguments,3);try{b.apply(c,l)}catch(m){this.onError(m)}}
 var ea=!1,fa=null,ha=!1,ia=null,ja={onError:function(a){ea=!0;fa=a}};function ka(a,b,c,d,e,f,g,h,k){ea=!1;fa=null;da.apply(ja,arguments)}function la(a,b,c,d,e,f,g,h,k){ka.apply(this,arguments);if(ea){if(ea){var l=fa;ea=!1;fa=null}else t("198"),l=void 0;ha||(ha=!0,ia=l)}}var ma=null,na={};
 function oa(){if(ma)for(var a in na){var b=na[a],c=ma.indexOf(a);-1<c?void 0:t("96",a);if(!pa[c]){b.extractEvents?void 0:t("97",a);pa[c]=b;c=b.eventTypes;for(var d in c){var e=void 0;var f=c[d],g=b,h=d;qa.hasOwnProperty(h)?t("99",h):void 0;qa[h]=f;var k=f.phasedRegistrationNames;if(k){for(e in k)k.hasOwnProperty(e)&&ra(k[e],g,h);e=!0}else f.registrationName?(ra(f.registrationName,g,h),e=!0):e=!1;e?void 0:t("98",d,a)}}}}
@@ -2612,7 +2577,7 @@ var Nh={default:Mh},Oh=Nh&&Mh||Nh;module.exports=Oh.default||Oh;
 
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2635,7 +2600,7 @@ exports.unstable_cancelScheduledWork=function(a){var b=a.next;if(null!==b){if(b=
 
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3065,7 +3030,7 @@ exports.unstable_cancelScheduledWork = unstable_cancelScheduledWork;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3086,11 +3051,11 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var React = __webpack_require__(1);
-var _assign = __webpack_require__(2);
-var checkPropTypes = __webpack_require__(4);
-var schedule = __webpack_require__(6);
-var tracing = __webpack_require__(15);
+var React = __webpack_require__(2);
+var _assign = __webpack_require__(1);
+var checkPropTypes = __webpack_require__(3);
+var schedule = __webpack_require__(5);
+var tracing = __webpack_require__(14);
 
 /**
  * Use invariant() to assert state which your program assumes to be true.
@@ -21332,22 +21297,22 @@ module.exports = reactDom;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(16);
+  module.exports = __webpack_require__(15);
 } else {
-  module.exports = __webpack_require__(17);
+  module.exports = __webpack_require__(16);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21364,7 +21329,7 @@ Object.defineProperty(exports,"__esModule",{value:!0});var b=0;exports.__interac
 
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21799,7 +21764,7 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21811,27 +21776,13 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(3);
+var _propTypes = __webpack_require__(18);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
-
-__webpack_require__(21);
-
-var _ishop3Products = __webpack_require__(22);
-
-var _ishop3Products2 = _interopRequireDefault(_ishop3Products);
-
-var _infoCard = __webpack_require__(24);
-
-var _infoCard2 = _interopRequireDefault(_infoCard);
-
-var _editCard = __webpack_require__(26);
-
-var _editCard2 = _interopRequireDefault(_editCard);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21841,176 +21792,86 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var IShop3 = function (_React$Component) {
-    _inherits(IShop3, _React$Component);
+//import './ishop3.css';
 
-    function IShop3() {
-        var _ref;
+var BrToJsx = function (_React$Component) {
+    _inherits(BrToJsx, _React$Component);
 
-        var _temp, _this, _ret;
+    function BrToJsx() {
+        _classCallCheck(this, BrToJsx);
 
-        _classCallCheck(this, IShop3);
-
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-            args[_key] = arguments[_key];
-        }
-
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = IShop3.__proto__ || Object.getPrototypeOf(IShop3)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-            goods: _this.props.goods,
-            selected: null,
-            workMode: 'show'
-        }, _this.selectFunction = function (id, val) {
-            if (val) {
-                return;
-            }
-            if (_this.state.selected === id) {
-                _this.setState({ selected: null });
-            } else {
-                _this.setState({ selected: id, workMode: 'show' });
-            }
-        }, _this.editFunction = function (id) {
-            if (_this.state.workMode === 'edit') {
-                alert('Уже редактрируете элемент! Закончите или отмените редактирование перед началом нового.');
-                return;
-            }
-            _this.setState({ selected: id, workMode: 'edit' });
-        }, _this.exitEditModeFunction = function () {
-            _this.setState({ workMode: 'show' });
-        }, _this.saveChangesFunction = function (id, name, url, quant, price, desc) {
-            var product = {
-                id: id,
-                name: name,
-                price: price,
-                img: url,
-                quantity: quant,
-                description: desc
-            };
-            if (!_this.state.selected) {
-                _this.state.goods.push(product);
-            } else {
-                _this.state.goods.forEach(function (item, i) {
-                    if (item.id === _this.state.selected) {
-                        _this.state.goods.splice(i, 1, product);
-                    }
-                });
-            }
-            _this.setState({ goods: _this.state.goods, selected: id });
-            _this.exitEditModeFunction();
-        }, _this.deletingFunction = function (code) {
-            if (confirm('Удалить?')) {
-                _this.state.goods.splice(code, 1);
-            }
-            _this.setState({ goods: _this.state.goods });
-        }, _this.addNewElement = function () {
-            _this.setState({ selected: null, workMode: 'edit' });
-        }, _temp), _possibleConstructorReturn(_this, _ret);
+        return _possibleConstructorReturn(this, (BrToJsx.__proto__ || Object.getPrototypeOf(BrToJsx)).apply(this, arguments));
     }
 
-    _createClass(IShop3, [{
+    _createClass(BrToJsx, [{
         key: 'render',
         value: function render() {
-            var _this2 = this;
-
-            var prodList = this.state.goods.map(function (v, i) {
-                return _react2.default.createElement(_ishop3Products2.default, {
-                    key: i,
-                    name: v.name,
-                    price: v.price,
-                    quantity: v.quantity,
-                    img: v.img,
-                    id: v.id,
-                    arrayCode: i,
-                    selectedID: _this2.state.selected,
-                    delFunc: _this2.deletingFunction,
-                    selectFunc: _this2.selectFunction,
-                    editFunc: _this2.editFunction
-                });
-            });
-            var selectedHash = this.state.goods.find(function (el) {
-                return el.id === _this2.state.selected;
-            });
-            var mainBlock = void 0;
-            var IDArr = [];
-            this.state.goods.forEach(function (item) {
-                IDArr.push(item.id);
-            });
-            if (this.state.selected && selectedHash !== undefined) {
-                if (this.state.workMode === 'show') {
-                    mainBlock = _react2.default.createElement(_infoCard2.default, {
-                        name: selectedHash.name,
-                        price: selectedHash.price,
-                        quantity: selectedHash.quantity,
-                        img: selectedHash.img,
-                        id: selectedHash.id,
-                        description: selectedHash.description,
-                        selectedID: this.state.selected,
-                        delFunc: this.deletingFunction,
-                        selectFunc: this.selectFunction
-                    });
-                }
-                if (this.state.workMode === 'edit') {
-                    mainBlock = _react2.default.createElement(_editCard2.default, {
-                        name: selectedHash.name,
-                        price: selectedHash.price,
-                        quantity: selectedHash.quantity,
-                        img: selectedHash.img,
-                        id: selectedHash.id,
-                        idArray: IDArr,
-                        description: selectedHash.description,
-                        exitEditMode: this.exitEditModeFunction,
-                        saveChanges: this.saveChangesFunction
-                    });
-                }
-            }
-            if (!this.state.selected && this.state.workMode === 'edit') {
-                mainBlock = _react2.default.createElement(_editCard2.default, {
-                    idArray: IDArr,
-                    exitEditMode: this.exitEditModeFunction,
-                    saveChanges: this.saveChangesFunction
-                });
-            }
+            // let prodList = this.state.goods.map( (v, i) =>
+            //     <Products
+            //         key={i}
+            //         name={v.name}
+            //         price={v.price}
+            //         quantity={v.quantity}
+            //         img={v.img}
+            //         id={v.id}
+            //         arrayCode={i}
+            //         selectedID={this.state.selected}
+            //         delFunc={this.deletingFunction}
+            //         selectFunc={this.selectFunction}
+            //         editFunc={this.editFunction}
+            //     />
+            // );
 
             return _react2.default.createElement(
                 'div',
-                { className: 'shop__wrapper' },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'shop__header' },
-                    '\u041C\u0430\u0433\u0430\u0437\u0438\u043D \u043E\u0440\u0443\u0436\u0438\u044F CS:GO'
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'shop__sidebar' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'shop__prod-list' },
-                        prodList
-                    ),
-                    _react2.default.createElement('input', { className: 'shop__sidebar-button', type: 'button', value: 'Add new', onClick: this.addNewElement })
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'shop__info-card' },
-                    mainBlock
-                )
+                null,
+                this.props.str
             );
         }
     }]);
 
-    return IShop3;
+    return BrToJsx;
 }(_react2.default.Component);
 
-IShop3.propTypes = {
-    goods: _propTypes2.default.arrayOf(_propTypes2.default.shape({
-        id: _propTypes2.default.number.isRequired,
-        name: _propTypes2.default.string.isRequired,
-        price: _propTypes2.default.number.isRequired,
-        img: _propTypes2.default.string,
-        quantity: _propTypes2.default.number.isRequired,
-        description: _propTypes2.default.string
-    }))
+BrToJsx.propTypes = {
+    str: _propTypes2.default.string.isRequired
 };
-exports.default = IShop3;
+exports.default = BrToJsx;
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+if (process.env.NODE_ENV !== 'production') {
+  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&
+    Symbol.for &&
+    Symbol.for('react.element')) ||
+    0xeac7;
+
+  var isValidElement = function(object) {
+    return typeof object === 'object' &&
+      object !== null &&
+      object.$$typeof === REACT_ELEMENT_TYPE;
+  };
+
+  // By explicitly using `prop-types` you are opting into new development behavior.
+  // http://fb.me/prop-types-in-prod
+  var throwOnDirectAccess = true;
+  module.exports = __webpack_require__(19)(isValidElement, throwOnDirectAccess);
+} else {
+  // By explicitly using `prop-types` you are opting into new production behavior.
+  // http://fb.me/prop-types-in-prod
+  module.exports = __webpack_require__(20)();
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 19 */
@@ -22026,10 +21887,10 @@ exports.default = IShop3;
 
 
 
-var assign = __webpack_require__(2);
+var assign = __webpack_require__(1);
 
-var ReactPropTypesSecret = __webpack_require__(5);
-var checkPropTypes = __webpack_require__(4);
+var ReactPropTypesSecret = __webpack_require__(4);
+var checkPropTypes = __webpack_require__(3);
 
 var printWarning = function() {};
 
@@ -22589,7 +22450,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 
-var ReactPropTypesSecret = __webpack_require__(5);
+var ReactPropTypesSecret = __webpack_require__(4);
 
 function emptyFunction() {}
 
@@ -22640,465 +22501,6 @@ module.exports = function() {
   return ReactPropTypes;
 };
 
-
-/***/ }),
-/* 21 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 22 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(3);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-__webpack_require__(23);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Products = function (_React$Component) {
-    _inherits(Products, _React$Component);
-
-    function Products() {
-        var _ref;
-
-        var _temp, _this, _ret;
-
-        _classCallCheck(this, Products);
-
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-            args[_key] = arguments[_key];
-        }
-
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Products.__proto__ || Object.getPrototypeOf(Products)).call.apply(_ref, [this].concat(args))), _this), _this.highLightSelected = function (e) {
-            _this.props.selectFunc(_this.props.id, e.target.value);
-        }, _this.deleting = function () {
-            _this.props.delFunc(_this.props.arrayCode);
-        }, _this.editing = function () {
-            _this.props.editFunc(_this.props.id);
-        }, _temp), _possibleConstructorReturn(_this, _ret);
-    }
-
-    _createClass(Products, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                { className: 'product__wrapper' + (this.props.selectedID === this.props.id ? ' selected' : ''), onClick: this.highLightSelected },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'product__info' },
-                    _react2.default.createElement('img', { className: 'product__img', src: this.props.img }),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'product__text' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'product__name' },
-                            'Наименование: ' + this.props.name
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'product__price' },
-                            'Цена: ' + this.props.price
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'product__quantity' },
-                            'Количество: ' + this.props.quantity
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'product__buttons-block' },
-                    _react2.default.createElement('input', { type: 'button', className: 'product__delete-button', value: 'Edit', onClick: this.editing }),
-                    _react2.default.createElement('input', { type: 'button', className: 'product__delete-button', value: 'Delete', onClick: this.deleting })
-                )
-            );
-        }
-    }]);
-
-    return Products;
-}(_react2.default.Component);
-
-Products.propTypes = {
-    id: _propTypes2.default.number.isRequired,
-    name: _propTypes2.default.string.isRequired,
-    price: _propTypes2.default.number.isRequired,
-    img: _propTypes2.default.string,
-    quantity: _propTypes2.default.number.isRequired,
-    arrayCode: _propTypes2.default.number.isRequired,
-    delFunc: _propTypes2.default.func,
-    editFunc: _propTypes2.default.func,
-    selectFunc: _propTypes2.default.func,
-    selectedID: _propTypes2.default.number
-};
-exports.default = Products;
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 24 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(3);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-__webpack_require__(25);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var InfoCard = function (_React$Component) {
-    _inherits(InfoCard, _React$Component);
-
-    function InfoCard() {
-        _classCallCheck(this, InfoCard);
-
-        return _possibleConstructorReturn(this, (InfoCard.__proto__ || Object.getPrototypeOf(InfoCard)).apply(this, arguments));
-    }
-
-    _createClass(InfoCard, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                { className: 'info-card__wrapper' },
-                _react2.default.createElement(
-                    'h1',
-                    { className: 'info-card__name' },
-                    this.props.name
-                ),
-                _react2.default.createElement('img', { className: 'info-card__img', src: this.props.img }),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'info-card__text' },
-                    this.props.description ? _react2.default.createElement(
-                        'div',
-                        { className: 'info-crd__description' },
-                        'Описание: ' + this.props.description
-                    ) : null,
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'info-card__price' },
-                        'Цена: ' + this.props.price
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'info-card__quantity' },
-                        'Количество: ' + this.props.quantity
-                    )
-                )
-            );
-        }
-    }]);
-
-    return InfoCard;
-}(_react2.default.Component);
-
-InfoCard.propTypes = {
-    id: _propTypes2.default.number.isRequired,
-    name: _propTypes2.default.string.isRequired,
-    price: _propTypes2.default.number.isRequired,
-    img: _propTypes2.default.string,
-    quantity: _propTypes2.default.number.isRequired,
-    description: _propTypes2.default.string,
-    delFunc: _propTypes2.default.func,
-    selectFunc: _propTypes2.default.func,
-    selectedID: _propTypes2.default.number
-};
-exports.default = InfoCard;
-
-/***/ }),
-/* 25 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 26 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(3);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-__webpack_require__(27);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var EditCard = function (_React$Component) {
-    _inherits(EditCard, _React$Component);
-
-    function EditCard() {
-        var _ref;
-
-        var _temp, _this, _ret;
-
-        _classCallCheck(this, EditCard);
-
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-            args[_key] = arguments[_key];
-        }
-
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = EditCard.__proto__ || Object.getPrototypeOf(EditCard)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-            id: _this.props.id,
-            name: _this.props.name,
-            price: _this.props.price,
-            img: _this.props.img,
-            quantity: _this.props.quantity,
-            description: _this.props.description,
-            nameErrMsg: null,
-            prodIDErrMsg: null,
-            urlErrMsg: null,
-            priceErrMsg: null,
-            quantErrMsg: null
-        }, _this.previewImg = function (e) {
-            _this.setState({ img: e.target.value });
-        }, _this.exitEditMode = function () {
-            _this.props.exitEditMode();
-        }, _this.validForm = function () {
-            var prodName = document.getElementById('prodName').value.trim();
-            var errText = null;
-            if (!prodName) {
-                errText = 'Поле не может быть пустым';
-            }
-            if (prodName.length > 30) {
-                errText = 'Не более 30 символов';
-            }
-            _this.setState({ name: prodName, nameErrMsg: errText });
-            var prodID = document.getElementById('prodID').value.trim();
-            errText = null;
-            if (prodID != parseInt(prodID)) {
-                errText = 'Только цифры допустимы';
-            }
-            if (!prodID) {
-                errText = 'Поле не может быть пустым';
-            }
-            prodID = parseInt(prodID);
-            if (prodID !== _this.props.id && _this.props.idArray.indexOf(prodID) > 0) {
-                errText = 'Такой ID уже используется';
-            }
-            _this.setState({ id: prodID, prodIDErrMsg: errText });
-            var url = document.getElementById('url').value.trim();
-            errText = null;
-            if (!url.match(/\.(png|jpe?g|gif)$/i)) {
-                errText = 'Сыллка должна указывать на изображение расширения .jpg, .png или .gif';
-            }
-            if (!url) {
-                errText = 'Поле не может быть пустым';
-            }
-            _this.setState({ img: url, urlErrMsg: errText });
-            var price = document.getElementById('price').value.trim();
-            errText = null;
-            if (price != parseInt(price)) {
-                errText = 'Только цифры допустимы';
-            }
-            if (!price) {
-                errText = 'Поле не может быть пустым';
-            }
-            price = parseInt(price);
-            if (price < 0) {
-                errText = 'Меньше 0 не допустимо';
-            }
-            _this.setState({ price: price, priceErrMsg: errText });
-            var quant = document.getElementById('quant').value.trim();
-            errText = null;
-            if (quant != parseInt(quant)) {
-                errText = 'Только цифры допустимы';
-            }
-            if (!quant) {
-                errText = 'Поле не может быть пустым';
-            }
-            quant = parseInt(quant);
-            if (quant < 0) {
-                errText = 'Меньше 0 не допустимо';
-            }
-            _this.setState({ quantity: quant, quantErrMsg: errText });
-            var desc = document.getElementById('desc').value.trim();
-            _this.setState({ description: desc });
-            if (!errText) {
-                _this.props.saveChanges(prodID, prodName, url, quant, price, desc);
-            }
-        }, _temp), _possibleConstructorReturn(_this, _ret);
-    }
-
-    _createClass(EditCard, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'form',
-                { className: 'edit-card__wrapper' },
-                _react2.default.createElement(
-                    'label',
-                    { htmlFor: 'prodName' },
-                    '\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435 '
-                ),
-                _react2.default.createElement('input', { id: 'prodName', type: 'text', defaultValue: this.props.name }),
-                _react2.default.createElement(
-                    'span',
-                    { className: 'edit-card__error-text' },
-                    this.state.nameErrMsg
-                ),
-                _react2.default.createElement('br', null),
-                _react2.default.createElement(
-                    'label',
-                    { htmlFor: 'prodID' },
-                    'ID \u0442\u043E\u0432\u0430\u0440\u0430 '
-                ),
-                _react2.default.createElement('input', { id: 'prodID', type: 'text', defaultValue: this.props.id }),
-                _react2.default.createElement(
-                    'span',
-                    { className: 'edit-card__error-text' },
-                    this.state.prodIDErrMsg
-                ),
-                _react2.default.createElement('br', null),
-                _react2.default.createElement('img', { className: 'info-card__img', src: this.state.img }),
-                _react2.default.createElement('br', null),
-                _react2.default.createElement(
-                    'label',
-                    { htmlFor: 'url' },
-                    '\u0421\u0441\u044B\u043B\u043A\u0430 '
-                ),
-                _react2.default.createElement('input', { id: 'url', type: 'url', defaultValue: this.props.img, onChange: this.previewImg }),
-                _react2.default.createElement(
-                    'span',
-                    { className: 'edit-card__error-text' },
-                    this.state.urlErrMsg
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'info-card__text' },
-                    _react2.default.createElement(
-                        'label',
-                        { htmlFor: 'price' },
-                        '\u0426\u0435\u043D\u0430 '
-                    ),
-                    _react2.default.createElement('input', { id: 'price', type: 'text', defaultValue: this.props.price }),
-                    _react2.default.createElement(
-                        'span',
-                        { className: 'edit-card__error-text' },
-                        this.state.priceErrMsg
-                    ),
-                    _react2.default.createElement('br', null),
-                    _react2.default.createElement(
-                        'label',
-                        { htmlFor: 'quant' },
-                        '\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E '
-                    ),
-                    _react2.default.createElement('input', { id: 'quant', type: 'text', defaultValue: this.props.quantity }),
-                    _react2.default.createElement(
-                        'span',
-                        { className: 'edit-card__error-text' },
-                        this.state.quantErrMsg
-                    ),
-                    _react2.default.createElement('br', null),
-                    _react2.default.createElement(
-                        'label',
-                        { htmlFor: 'desc' },
-                        '\u041E\u043F\u0438\u0441\u0430\u043D\u0438\u0435 '
-                    ),
-                    _react2.default.createElement('br', null),
-                    _react2.default.createElement('textarea', { id: 'desc', type: 'text', defaultValue: this.props.description })
-                ),
-                _react2.default.createElement('input', { type: 'button', value: this.props.name ? 'Save' : 'Add', onClick: this.validForm }),
-                _react2.default.createElement('input', { type: 'button', value: 'Exit', onClick: this.exitEditMode })
-            );
-        }
-    }]);
-
-    return EditCard;
-}(_react2.default.Component);
-
-EditCard.propTypes = {
-    id: _propTypes2.default.number,
-    name: _propTypes2.default.string,
-    price: _propTypes2.default.number,
-    img: _propTypes2.default.string,
-    quantity: _propTypes2.default.number,
-    description: _propTypes2.default.string,
-    idArray: _propTypes2.default.array,
-    exitEditMode: _propTypes2.default.func,
-    saveChanges: _propTypes2.default.func
-};
-exports.default = EditCard;
-
-/***/ }),
-/* 27 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 28 */
-/***/ (function(module, exports) {
-
-module.exports = [{"id":65486,"name":"M4A1-S","price":3100,"img":"http://mircsgo.ru/wp-content/uploads/2015/03/M4a1-s.png","quantity":33,"description":"Бесшумный карабин M4A1 оснащен менее вместительным магазином, чем его аналог без глушителя, зато он обеспечивает более тихую стрельбу с меньшей отдачей и повышенной точностью."},{"id":54852,"name":"AK-47","price":2700,"img":"http://mircsgo.ru/wp-content/uploads/2014/11/Ak47go.png","quantity":36,"description":"Мощный и надежный АК-47 - одна из самых популярных штурмовых винтовок в мире. Наиболее смертельна стрельба короткими и точными очередями."},{"id":95485,"name":"M4A4","price":3100,"img":"http://mircsgo.ru/wp-content/uploads/2015/03/M4a4.png","quantity":33,"description":"М4А4 - более точный, но слабый аналог АК-47 - полностью автоматическая штурмовая винтовка, которая находится исключительно на вооружении у спецназа."},{"id":32548,"name":"Galil AR","price":2000,"img":"http://mircsgo.ru/wp-content/uploads/2015/04/Galilar.png","quantity":30,"description":"Galil AR - относительно дешевая штурмовая винтовка у террористов, которая считается хорошим оружием на средних и дальних дистанциях."},{"id":32584,"name":"FAMAS","price":2250,"img":"http://mircsgo.ru/wp-content/uploads/2015/04/Famasgo.png","quantity":30,"description":"Дешевое решение для не очень богатых игроков, FAMAS отлично заполняет нишу между более дорогими автоматами и менее эффективными пистолетами-пулеметами."},{"id":48562,"name":"AUG","price":3300,"img":"http://mircsgo.ru/wp-content/uploads/2015/03/Auggo.png","quantity":28,"description":"Мощная и точная винтовка с оптическим прицелом AUG компенсирует свою долгую перезарядку низким разбросом пуль и высокой скорострельностью."},{"id":67485,"name":"SG 553","price":3000,"img":"http://mircsgo.ru/wp-content/uploads/2015/03/Sg556.png","quantity":30,"description":"Эксклюзивный для террористов SG553 - хорошая альтернатива АК-47 с прицелом, помогающим в стрельбе на дальних дистанциях."},{"id":95486,"name":"SSG 08","price":1700,"img":"http://mircsgo.ru/wp-content/uploads/2015/03/Ssg08.png","quantity":88,"description":"Снайперская винтовка SSG08 со скользящим затвором не наносит много повреждений, однако хорошее соотношение цены и качества делает ее отличным приобретением в первых раундах для перестрелок на дальних дистанциях."},{"id":85256,"name":"S3SG1","price":5000,"img":"http://mircsgo.ru/wp-content/uploads/2015/04/G3.png","quantity":80,"description":"Дорогая снайперская винтовка G3SG1 значительно замедляет движение, что, однако, компенсируется более высокой скорострельностью, чем у других снайперских винтовок."},{"id":55845,"name":"SCAR-20","price":5000,"img":"http://mircsgo.ru/wp-content/uploads/2015/04/Scar20.png","quantity":80,"description":"SCAR-20 - полуавтоматическая снайперская винтовка, которая предлагает высокую скорострельность и большой урон на расстоянии, в обмен на более медленную скорость передвижения и большую стоимость самого оружия."},{"id":32541,"name":"AWP","price":4750,"img":"http://mircsgo.ru/wp-content/uploads/2015/03/Awpgo.png","quantity":115,"description":"Печально известная снайперская винтовка AWP - очень опасное и очень эффективное оружие, которое легко узнается по характерному звуку выстрела и по жестокому правилу: \"один выстрел - один труп\"."}]
 
 /***/ })
 /******/ ]);

@@ -1,0 +1,12 @@
+.mlinetext {
+    width: 250px;
+    margin: auto;
+}
+.onestring {
+    text-align: center;
+}
+.onestring:last-child {
+    text-align: right;
+    font-style: italic;
+    font-size: 80%;
+}
