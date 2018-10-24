@@ -107,8 +107,6 @@ class EditCard extends React.Component {
                 <input id="prodID" type="text" defaultValue={this.props.id} onChange={this.getNewStates}/>
                 <span className="edit-card__error-text">{this.state.prodIDErrMsg}</span>
                 <br />
-                <img className='info-card__img' src={this.state.img} />
-                <br />
                 <label htmlFor="url">Ссылка </label>
                 <input id="url" type="url" defaultValue={this.props.img} onChange={this.getNewStates}/>
                 <span className="edit-card__error-text">{this.state.urlErrMsg}</span>

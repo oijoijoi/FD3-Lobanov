@@ -14,55 +14,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ishop3.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="editCard.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ishop3/components/editCard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="106" column="53" lean-forward="true" selection-start-line="106" selection-start-column="53" selection-end-line="106" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ishop3.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ishop3/components/ishop3.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="194">
               <caret line="152" column="40" lean-forward="false" selection-start-line="152" selection-start-column="40" selection-end-line="152" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/br2jsx/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/br2jsx/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-              <folding>
-                <element signature="e#15#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="brtojsx.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/br2jsx/components/brtojsx.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="brtojsx.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/br2jsx/components/brtojsx.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -139,7 +105,6 @@
         <option value="$PROJECT_DIR$/ishop3/components/infoCard.css" />
         <option value="$PROJECT_DIR$/ishop3/components/ishop3-products.css" />
         <option value="$PROJECT_DIR$/ishop3/components/ishop3.css" />
-        <option value="$PROJECT_DIR$/ishop3/components/editCard.js" />
         <option value="$PROJECT_DIR$/br2jsx/components/br2jsx.js" />
         <option value="$PROJECT_DIR$/br2jsx/components/br2jsx.css" />
         <option value="$PROJECT_DIR$/br2jsx/package.json" />
@@ -148,6 +113,7 @@
         <option value="$PROJECT_DIR$/ishop3/components/ishop3.js" />
         <option value="$PROJECT_DIR$/br2jsx/components/brtojsx.js" />
         <option value="$PROJECT_DIR$/br2jsx/components/brtojsx.css" />
+        <option value="$PROJECT_DIR$/ishop3/components/editCard.js" />
       </list>
     </option>
   </component>
@@ -197,6 +163,17 @@
             <path>
               <item name="FD3-Lobanov" type="b2602c69:ProjectViewProjectNode" />
               <item name="FD3-Lobanov" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FD3-Lobanov" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FD3-Lobanov" type="462c0819:PsiDirectoryNode" />
+              <item name="ishop3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FD3-Lobanov" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FD3-Lobanov" type="462c0819:PsiDirectoryNode" />
+              <item name="ishop3" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -289,17 +266,17 @@
       <workItem from="1540358544106" duration="2661000" />
       <workItem from="1540361823282" duration="603000" />
       <workItem from="1540364068316" duration="3243000" />
-      <workItem from="1540374520714" duration="5106000" />
+      <workItem from="1540374520714" duration="6200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145648000" />
+    <option name="totallyTimeSpent" value="146742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="338" y="285" width="1395" height="767" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21960206" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21960206" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -490,14 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ishop3/components/editCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2074">
-          <caret line="125" column="118" lean-forward="false" selection-start-line="125" selection-start-column="118" selection-end-line="125" selection-end-column="118" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/br2jsx/components/br2jsx.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -612,6 +581,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="152" column="40" lean-forward="false" selection-start-line="152" selection-start-column="40" selection-end-line="152" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ishop3/components/editCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="106" column="53" lean-forward="true" selection-start-line="106" selection-start-column="53" selection-end-line="106" selection-end-column="53" />
           <folding />
         </state>
       </provider>
