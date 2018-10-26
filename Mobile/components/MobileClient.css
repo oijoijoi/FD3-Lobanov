@@ -1,0 +1,29 @@
+﻿.MobileClient
+{
+  background: rgba(0,0,0,0.2);
+  margin-bottom: 2px;
+}
+
+.MobileClient:hover {
+  background: rgba(255,0,0,0.2);
+}
+
+.MobileClientBalance
+{
+  display: inline-block;
+  width: 50px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.MobileClientFIO
+{
+  display: inline-block;
+  width: 130px;
+  margin-right: 0;
+}
+
+.button {
+  width: 50px;
+  margin-left: 5px;
+}
